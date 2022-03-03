@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="main_text">
+                <h1>Dojo Weather</h1>
+            </div>
+            <div class="cities">
+                <a href="#" class="link_city" onclick="cargando()">London</a>
+                <a href="#" class="link_city" onclick="cargando()">New Zeland</a>
+                <a href="#" class="link_city" onclick="cargando()">Köln</a>
+            </div>
+        </div>
+        <div class="city">
+            <div class="main_city">
+                <H1>Curicó</H1>
+            </div>
+            <div class="temperatures">
+                <p>Show the temperatures</p>
+                <select id="temperaturas" class="temperaturas" onchange="change_grades()">
+                    <option value="Celsius" selected>°C</option>
+                    <option value="Fahrenheit" >°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="day_weather">
+            <div class="days">
+                <h2>Today</h2>
+                <img src="assets/some_sun.png" class="img">
+                <h3>Some Sun</h3>
+                <div class="grades">
+                    <p class="red" id="cel-1">34°</p>
+                    <p class="blue" id="cel-2">12°</p>
+                </div>
+            </div>
+            <div class="days">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_sun.png" class="img">
+                <h3>Some Sun</h3>
+                <div class="grades">
+                    <p class="red" id="cel-3">32°</p>
+                    <p class="blue" id="cel-4">12°</p>
+                </div>
+            </div>
+            <div class="days">
+                <h2>Saturday</h2>
+                <img src="assets/some_sun.png" class="img">
+                <h3>Some Sun</h3>
+                <div class="grades">
+                    <p class="red" id="cel-5">32°</p>
+                    <p class="blue" id="cel-6">12°</p>
+                </div>
+            </div>
+            <div class="days">
+                <h2>Sunday</h2>
+                <img src="assets/some_clouds.png" class="img">
+                <h3>Some Clouds</h3>
+                <div class="grades">
+                    <p class="red" id="cel-7">25°</p>
+                    <p class="blue" id="cel-8">13°</p>
+                </div>
+            </div>
+        </div>
+        <div class="cookie">
+            <div>
+                <img src="assets/cookie.png">
+            </div>
+            <div class="cookie_text">
+                <p> Stop! Cookie Time</p>
+                <p> We use cookies (sadly not the edible ones) to personalize 
+                    content and ads, to prive social media features and to analyse our traffic. <a href="">Read more...</a></a></p>
+            </div>
+            <div class="main_btn">
+                <button class="btn" onclick="hide()">I Accept</button>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
