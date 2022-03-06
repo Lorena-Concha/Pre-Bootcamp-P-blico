@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.formulario {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(216, 211, 211);
+  border-radius: 20px;
+  height: 35px;
+  width: 400px;
+  align-items: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 50px;
+}
+
+.input {
+  margin-left: 10px;
+}
+p {
+  gap: 10px;
+}
+.validar{
+  display: flex;
+  flex-direction: row;
+}
+
+.valmessage {
+  display: flex;
+  flex-direction: row;
+}
