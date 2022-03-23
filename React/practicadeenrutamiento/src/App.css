@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
