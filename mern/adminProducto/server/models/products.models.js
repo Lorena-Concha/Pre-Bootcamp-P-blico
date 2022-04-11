@@ -4,7 +4,7 @@ const ProductoSchema = new mongoose.Schema({
 	title: {
 		type: String,
 		required: [true, 'el campo Title es obligatorio'],
-		minlength: [5, 'debe ingresar al menos 5 caracteres']
+		minlength: [2, 'debe ingresar al menos 2 caracteres']
 	},
 	price: {
 		type: Number,
