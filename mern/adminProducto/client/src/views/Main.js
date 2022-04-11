@@ -13,13 +13,17 @@ export default () => {
             setProducts(res.data.products);
             })
             .catch(err => console.log("Error:", err))
-    },)
+    },[])
+
+    const removeFromDom = productId => {
+        setProducts(products.filter(product => product._id !== productId));
+    }
 
     return (
         <div>
             <h1>Product Manager</h1>
             <ProductForm></ProductForm>
-            {products && <ProductList product={products}></ProductList>}
+            {products && <ProductList product={products} removeFromDom={removeFromDom}></ProductList>}
         </div>
     )
 }

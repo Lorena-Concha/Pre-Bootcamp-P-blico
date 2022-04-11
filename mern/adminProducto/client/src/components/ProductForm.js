@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import axios from 'axios';
+import { useHistory } from "react-router-dom";
 
 
 export default () => {
+    const history = useHistory();
     const [title, setTitle] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
@@ -13,7 +15,10 @@ const onSubmitProduct = e => {
     axios.post('http://localhost:8000/api/product/new', {
         title,price,description
     })
-    .then(res=>console.log(res))
+    .then(res=> {
+        console.log(res)
+        history.go(0)
+    })
     .catch(err=>console.log(err))
 }
 
