@@ -40,14 +40,65 @@
 .container {
   display: flex;
   justify-content: space-around;
-}
-
-* {
-  border: 3px solid red;
-}
+  }
 
 .project {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  gap: 3px;
+  border: 3px solid rgb(126, 126, 126);
+  border-radius: 20px;
+  width: 400px;
+  margin: auto;
+}
+
+C {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 430PX;
+  border-radius: 20px;
+  gap: 5px;
+}
+
+.button {
+  transition-duration: 0.4s;
+  width: 120px;
+  margin: 10px;
+  border-radius: 20px;
+  background: rgb(247,241,251);
+background: linear-gradient(153deg, rgba(247,241,251,1) 0%, rgba(191,173,173,1) 8%, rgba(136,131,121,1) 100%);
+}
+
+.button:hover {
+  background-color:rgb(14, 11, 66); /* Green */
+  color: white;
+}
+
+
+h2, label {
+border-radius: 20px;
+background: rgb(247,241,251);
+background: linear-gradient(153deg, rgba(247,241,251,1) 0%, rgba(191,173,173,1) 8%, rgba(136,131,121,1) 100%);
+}
+
+/* * {
+  border: 2px solid red;
+} */
+.container_new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  border: 3px solid rgb(126, 126, 126);
+  margin-top: 50px;
+  width: 500px;
+  border-radius: 20px;
+  gap: 10px
+}
+
+.main_container{
+  width: 400px;
+
 }

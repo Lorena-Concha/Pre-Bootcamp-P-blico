@@ -7,7 +7,8 @@ const Main = () => {
         <div>
             <h1>Project Manager</h1>
             <div>
-                <Board></Board>
+                <Board/>
+
             </div>
         </div>
     );
